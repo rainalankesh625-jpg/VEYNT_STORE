@@ -355,7 +355,7 @@
 </head>
 <body>
 
-    <a href="VEYNT_BOOKS_STORE.html" class="back-btn" id="backBtn"><i class="fas fa-arrow-left"></i> <span class="label">Back to Store</span></a>
+    <a href="index.html" class="back-btn" id="backBtn"><i class="fas fa-arrow-left"></i> <span class="label">Back to Store</span></a>
     <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">🌙</button>
 
     <div class="main-container">
