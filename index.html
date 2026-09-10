@@ -1485,10 +1485,10 @@
                 grid.innerHTML = pageItems.map(book => `
                     <div class="book-card">
     ${book.badge ? `<span class="book-badge ${book.badgeClass || ''}">${book.badge}</span>` : ''}
-    <a href="PRODUCT DETAIL PAGE.html?id=${book.id}" class="book-cover-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
+    <a href="Product page?id=${book.id}" class="book-cover-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
         <img src="${book.cover}" alt="${book.title}" class="book-cover" loading="lazy" />
     </a>
-    <a href="PRODUCT DETAIL PAGE.html?id=${book.id}" class="book-title-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
+    <a href="Product page?id=${book.id}" class="book-title-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
         <h3>${book.title}</h3>
     </a>
     <div class="book-meta">${book.tags.join(' · ')}</div>
