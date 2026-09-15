@@ -1193,11 +1193,10 @@
         // ============================================================
         const books = [
             // 👇 Add your products here
-            // Example Product (Copy this and change values)
-            {
+             {
                 id: 1,
                 title: "When Giants Ruled the Earth",
-                cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/community_9e6be18f-22bb-47cf-8dd5-c3147a536058.jpeg",
+                cover: "https://picsum.photos/seed/dino1/400/600",
                 category: "dinosaurs",
                 tags: ["Dinosaurs", "3D", "Audio"],
                 desc: "Explore the world of dinosaurs with 3D models, audio, and interactive quizzes.",
@@ -1216,7 +1215,7 @@
             {
                 id: 2,
                 title: "T-Rex: The Ultimate Predator",
-                cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/HANUMAN.jpeg",
+                cover: "https://picsum.photos/seed/dino2/400/600",
                 category: "dinosaurs",
                 tags: ["T-Rex", "3D", "Audio"],
                 desc: "Everything about T-Rex – from hunting to parenting.",
@@ -1231,119 +1230,7 @@
                 reviews: [
                     { name: "Sneha R.", stars: 5, text: "My child is obsessed with T-Rex now!" }
                 ]
-            },
-          {
-    id: 3,
-    title: "Evolutionary Dead Ends",
-    cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/community_0f9f6c5d-c7a7-4fb5-bea4-777a4c398aec.jpeg",
-    category: "evolution",
-    tags: ["Evolution", "Biology", "Educational"],
-    desc: "Explore evolutionary experiments that disappeared from the tree of life.",
-    price: 299,
-    originalPrice: 499,
-    badge: "New",
-    badgeClass: "badge-new",
-    rating: 4.8,
-    likes: 50,
-    date: "2026-08-08",
-    link: "#",
-    reviews: []
-},
-
-          {
-                id: 4,
-                title: "T-Rex: The Ultimate Predator",
-                cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/0 (27).jpg",
-                category: "dinosaurs",
-                tags: ["T-Rex", "3D", "Audio"],
-                desc: "Everything about T-Rex – from hunting to parenting.",
-                price: 349,
-                originalPrice: 699,
-                badge: "New",
-                badgeClass: "badge-new",
-                rating: 4.8,
-                likes: 189,
-                date: "2026-08-05",
-                link: "#",
-                reviews: [
-                    { name: "Sneha R.", stars: 5, text: "My child is obsessed with T-Rex now!" }
-                ]
-            },
-
-                    {
-    id: 5,
-    title: "Evolutionary Dead Ends",
-    cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/0 (41).jpg",
-    category: "evolution",
-    tags: ["Evolution", "Biology", "Educational"],
-    desc: "Explore evolutionary experiments that disappeared from the tree of life.",
-    price: 299,
-    originalPrice: 499,
-    badge: "New",
-    badgeClass: "badge-new",
-    rating: 4.8,
-    likes: 50,
-    date: "2026-08-08",
-    link: "#",
-    reviews: []
-},
-         
-          {
-            id: 6,
-            title: "Geo - Politics : Master Mind",
-            cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/community_9169553f-d28f-4422-92b2-52c3c9724544.jpeg",
-            category: "Geo-Politics",
-            tags: ["Geo-Politics", "Politics", "Educational"],
-            desc: "Learn, understand and master in Geo-Politics. Explained and covered Real incidents and fictional scenarios.",
-            price: 149,
-            originalPrice: 299,
-            badge: "",
-            badgeClass: "",
-            rating: 2.3,
-            likes: 34,
-            date: "2026-09-05",
-            link: "#",
-            reviews: []
-              
-           },
-
-          {
-            id: 7,
-            title: "Daemon Targerian:The ruthless Prince",
-            cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/community_178532a7-25ef-4c31-932f-fef6c3b822a5.jpeg",
-            category: "History",
-            tags: ["Politice", "History", "War", "Government"],
-            desc: "Understand the ruthless prince in history. His decisions, actions and anger changed the politics.",
-            price: 59,
-            originalPrice: 199,
-            badge: "",
-            badgeClass: "",
-            rating: 3,
-            likes: 15,
-            date: "2026-07-23",
-            link: "#",
-            reviews: []
-              
-           },
-
-          {
-            id: 8,
-            title: "The Last Echo of Kaladin",
-            cover: "https://raw.githubusercontent.com/rainalankesh625-jpg/ONLINE_STORE_IMAGES/main/community_5b626e25-4b04-40b9-b4b7-c8b0fbd8b439.jpeg",
-            category: "Science Fantasy / Space Opera",
-            tags: ["Clone-Consciousness", "Dying-Star", "Philosiphical-Horror", "Found-Family"],
-            desc: "Understand the ruthless prince in history. His decisions, actions and anger changed the politics.",
-            price: 14.99,
-            originalPrice: 27.99,
-            badge: "",
-            badgeClass: "",
-            rating: 4,
-            likes: 2891,
-            date: "2026-07-23",
-            link: "#",
-            reviews: []
-              
-           }
+            }
             
         ];
 
@@ -1485,10 +1372,10 @@
                 grid.innerHTML = pageItems.map(book => `
                     <div class="book-card">
     ${book.badge ? `<span class="book-badge ${book.badgeClass || ''}">${book.badge}</span>` : ''}
-    <a href="Product page?id=${book.id}" class="book-cover-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
+    <a href="PRODUCT DETAIL PAGE.html?id=${book.id}" class="book-cover-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
         <img src="${book.cover}" alt="${book.title}" class="book-cover" loading="lazy" />
     </a>
-    <a href="Product page?id=${book.id}" class="book-title-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
+    <a href="PRODUCT DETAIL PAGE.html?id=${book.id}" class="book-title-link" onclick="window.location.href='PRODUCT DETAIL PAGE.html?id=' + ${book.id}; return false;">
         <h3>${book.title}</h3>
     </a>
     <div class="book-meta">${book.tags.join(' · ')}</div>
